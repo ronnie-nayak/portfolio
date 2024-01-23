@@ -1,27 +1,26 @@
-"use client"
-import { handleScroll } from "@/lib/utils";
+
 import { AnimatePresence, motion, useScroll, useTransform } from "framer-motion";
-import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { useState } from "react";
 
-const data = ["", "", ""]
-export default function Project1() {
+export function PageComponent(props: { id: string, layoutId: string, topImage: string, title: string, heading: string, description: string, firstImage: string, firstImageSize: string, secondImage: string, secondImageSize: string, thirdImage: string, thirdImageSize: string }) {
   const router = useRouter()
 
   const [first, setFirst] = useState(false)
+
+  const data = ["", "", ""]
   return (
     <>
-      <div id="arn" className="p-10 pt-24 flex flex-col items-center w-screen h-full">
+      <div id={props.id} className="p-10 pt-24 flex flex-col items-center w-screen h-full">
         <motion.div className="w-[70vw] h-[20vh] sm:h-[70vh] rounded-3xl "
           initial={{ boxShadow: "rgba(0, 0, 0, 0) 0px 5px 15px" }}
-          animate={{ boxShadow: "rgba(0, 0, 0, 0.35) 0px 5px 15px" }}
+          animate={{ boxShadow: "rgba(0, 0, 0, 0.6) 0px 5px 15px" }}
           transition={{ duration: 0.9 }}
           style={{
-            background: "url('/project/arn.png') center ",
+            background: props.topImage,
             backgroundSize: "cover",
           }}
-          layoutId={"2project"}
+          layoutId={props.layoutId}
           onClick={() => setFirst(true)}
         ></motion.div>
 
@@ -32,35 +31,35 @@ export default function Project1() {
           animate={{ opacity: 1 }}
         >
           <div className="w-full">
-            <h1 className="sm:text-[2.5vw] mb-2">My Portfolio Website</h1>
-            <h2 className="sm:text-[2vw] underline">A Showcase of what I can offer You</h2>
+            <h1 className="sm:text-[2.5vw] mb-2">{props.title}</h1>
+            <h2 className="sm:text-[2vw] underline">{props.heading}</h2>
           </div>
 
           <p className="w-full sm:text-[1.5vw]">
-            I build my projects with a lot of care and really love seeing my work come to life. I hope you could see the effort I am willing to put in to learn what I don't know through constant trial and error. If you wish to be in contact, give me a call on <span className="underline font-bold">+91-9821245180</span>, send an email at <span className="underline font-bold">abhishek.ron.nayak@gmail.com</span> or fill the contact form on the main page. Hope to be of help.
+            {props.description}
           </p>
         </motion.div>
 
 
         <motion.div className="w-[70vw] h-[20vh] sm:h-[70vh] rounded-3xl mb-14 "
           style={{
-            background: "url('/project/arn-page/projects.png') center ",
-            backgroundSize: "100%",
+            background: props.firstImage,
+            backgroundSize: props.firstImageSize,
             boxShadow: "rgba(0, 0, 0, 0.6) 0px 5px 15px"
           }}
         ></motion.div>
         <div className="flex gap-14">
           <motion.div className="w-[35vw] h-[20vh] sm:h-[70vh] rounded-3xl "
             style={{
-              background: "url('/project/big-arn.png') 50% 0% ",
-              backgroundSize: "150%",
+              background: props.secondImage,
+              backgroundSize: props.secondImageSize,
               boxShadow: "rgba(0, 0, 0, 0.6) 0px 5px 15px"
             }}
           ></motion.div>
           <motion.div className="w-[35vw] h-[20vh] sm:h-[70vh] rounded-3xl "
             style={{
-              background: "url('/project/big-arn.png') 50% 86% ",
-              backgroundSize: "160%",
+              background: props.thirdImage,
+              backgroundSize: props.thirdImageSize,
               boxShadow: "rgba(0, 0, 0, 0.6) 0px 5px 15px"
             }}
           ></motion.div>
@@ -105,6 +104,5 @@ export default function Project1() {
         </motion.div >
       }
     </>
-
   )
 }

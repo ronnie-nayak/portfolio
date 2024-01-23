@@ -9,5 +9,5 @@ import { useState } from "react";
 
 
 export default function Project1() {
-  return <PageComponent key="save-up" {...pageLinks[1]} />
+  return <PageComponent key="arn" {...pageLinks[2]} />
 }

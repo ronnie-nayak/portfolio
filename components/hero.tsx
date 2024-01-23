@@ -15,7 +15,7 @@ export default function Hero() {
         fontWeight: "300",
         lineHeight: "1.4",
         textShadow: "0 1px 0 rgba(255, 255, 255, 0.9)",
-      }} className="absolute mt-14 sm:mt-[200px] z-10 w-[70%] sm:text-[1.75vw]">
+      }} className="absolute mt-14 sm:mt-[200px] z-10 w-[70%] sm:text-[1.70vw]">
         <TypeAnimation
           sequence={[
             // Same substring at the start will only be typed out once, initially

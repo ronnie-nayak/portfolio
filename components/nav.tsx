@@ -24,7 +24,6 @@ export default function Nav() {
     }
     if (searchParams.get('project') === "true") {
       handleScroll("./#projects")
-      router.replace("/")
     }
   }, [pathname])
 

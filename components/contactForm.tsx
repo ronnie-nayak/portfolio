@@ -101,8 +101,8 @@ export function ContactForm() {
                     </SelectTrigger>
                   </FormControl>
                   <SelectContent className="former text-black">
-                    <SelectItem value="Client" className="sm:text-[1.5vw]">Client</SelectItem>
-                    <SelectItem value="Colab" className="sm:text-[1.5vw]">Colab</SelectItem>
+                    <SelectItem value="Client" className="sm:text-[1.5vw] text-black">Client</SelectItem>
+                    <SelectItem value="Colab" className="sm:text-[1.5vw] text-black">Colab</SelectItem>
                   </SelectContent>
                 </Select>
                 <FormMessage />
