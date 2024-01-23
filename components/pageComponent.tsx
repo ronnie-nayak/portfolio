@@ -21,8 +21,8 @@ export function PageComponent(props: { id: string, layoutId: string, topImage: s
         <div>
           <motion.div className="w-[90vw] sm:w-[70vw] h-[60vw] sm:h-[35vw] rounded-3xl "
             initial={{ boxShadow: "rgba(0, 0, 0, 0) 0px 5px 15px" }}
-            animate={{ boxShadow: "rgba(0, 0, 0, 0.6) 0px 5px 15px" }}
-            transition={{ duration: 0.9 }}
+            animate={{ boxShadow: "rgba(0, 0, 0, 1) 0px 5px 15px" }}
+            transition={{ duration: 0.3 }}
             onAnimationComplete={() => setPageScroll(true)}
             style={{
               background: props.topImage,
