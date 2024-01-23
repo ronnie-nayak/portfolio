@@ -12,7 +12,7 @@ export function PageComponent(props: { id: string, layoutId: string, topImage: s
   return (
     <>
       <div id={props.id} className="p-10 pt-24 flex flex-col items-center w-screen h-full">
-        <motion.div className="w-[70vw] h-[20vh] sm:h-[70vh] rounded-3xl "
+        <motion.div className="w-[90vw] sm:w-[70vw] h-[60vw] sm:h-[40vw] rounded-3xl "
           initial={{ boxShadow: "rgba(0, 0, 0, 0) 0px 5px 15px" }}
           animate={{ boxShadow: "rgba(0, 0, 0, 0.6) 0px 5px 15px" }}
           transition={{ duration: 0.9 }}
@@ -35,34 +35,34 @@ export function PageComponent(props: { id: string, layoutId: string, topImage: s
               <h2 className="sm:text-[2vw] underline">{props.heading}</h2>
             </div>
 
-            <p className="w-full sm:text-[1.5vw]">
+            <p className="w-full sm:text-[1.5vw] mb-2">
               {props.description}
             </p>
           </motion.div>
-          <div className="flex gap-9">
+          <div className="flex gap-4 mt-4 sm:gap-9 flex-wrap justify-center sm:justify-start">
             {
-              props.builtWith.map((item, index) => (<img src={item} key={index} className="w-20 h-20" />))
+              props.builtWith.map((item, index) => (<img src={item} key={index} className="w-10 h-10 sm:w-20 sm:h-20" />))
             }
           </div>
         </div>
 
 
-        <motion.div className="w-[70vw] h-[20vh] sm:h-[70vh] rounded-3xl mb-14 "
+        <motion.div className="w-[90vw] sm:w-[70vw] h-[60vw] sm:h-[40vw]  rounded-3xl mb-14 "
           style={{
             background: props.firstImage,
             backgroundSize: props.firstImageSize,
             boxShadow: "rgba(0, 0, 0, 0.6) 0px 5px 15px"
           }}
         ></motion.div>
-        <div className="flex gap-14">
-          <motion.div className="w-[35vw] h-[20vh] sm:h-[70vh] rounded-3xl "
+        <div className="flex flex-col sm:flex-row gap-14">
+          <motion.div className="w-[90vw] sm:w-[35vw] h-[60vw] sm:h-[40vw] rounded-3xl "
             style={{
               background: props.secondImage,
               backgroundSize: props.secondImageSize,
               boxShadow: "rgba(0, 0, 0, 0.6) 0px 5px 15px"
             }}
           ></motion.div>
-          <motion.div className="w-[35vw] h-[20vh] sm:h-[70vh] rounded-3xl "
+          <motion.div className="w-[90vw] sm:w-[35vw] h-[60vw] sm:h-[40vw] rounded-3xl "
             style={{
               background: props.thirdImage,
               backgroundSize: props.thirdImageSize,

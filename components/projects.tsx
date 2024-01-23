@@ -29,6 +29,7 @@ const itemer = {
 
 
 const projectLinks = [{
+  name: "Eat Street",
   layoutId: "0",
   bigImage: "url('/project/big-eat.png') 50% -5%",
   imageSize: "200%",
@@ -37,6 +38,7 @@ const projectLinks = [{
   middleImage: "url('/project/eat-street.png') center ",
   link: "/eat-street#eat-street"
 }, {
+  name: "Save-Up",
   layoutId: "1",
   bigImage: "url('/project/big-save.png') 30% 150%",
   imageSize: "250%",
@@ -45,6 +47,7 @@ const projectLinks = [{
   middleImage: "url('/project/save-up.png') center",
   link: "/save-up#save-up"
 }, {
+  name: "Portfolio Website",
   layoutId: "2",
   bigImage: "url('/project/big-arn.png') 50% 65%",
   imageSize: "200%",
@@ -61,7 +64,7 @@ function TransitionComponent({ layoutId, link, middleImage }: { layoutId: string
 
     <div className="fixed top-0 left-0 p-24 flex flex-col items-center w-screen h-screen z-20"
     >
-      <motion.div layoutId={layoutId} className="w-[70vw] h-[20vh] sm:h-[70vh]"
+      <motion.div layoutId={layoutId} className="w-[90vw] sm:w-[70vw] h-[60vw] sm:h-[40vw]"
         onLayoutAnimationComplete={() => router.push(link)}
         style={{
           background: middleImage,
@@ -123,6 +126,7 @@ export default function Projects() {
                 initial="hidden"
                 whileInView="show"
               >
+                <h1 className="text-[6vw] sm:text-[2.5vw] mb-2 underline">{project.name}</h1>
                 <Link href="" className="linker"><h2>Visit Website</h2><TbWorld size={45} /><LuArrowUpRight size={45} /></Link>
                 <Link href="" className="linker"><h2>Github Code</h2><FaGithub size={45} /><LuArrowUpRight size={45} /></Link>
               </motion.div>
