@@ -13,11 +13,12 @@ export function PageComponent(props: { id: string, layoutId: string, topImage: s
   const router = useRouter()
 
   const [first, setFirst] = useState(false)
+  const setPageScroll = useSetRecoilState(PageScrollState)
   const data = ["", "", ""]
   return (
     <>
-      <div className="p-10 pt-24 flex flex-col items-center w-screen h-full overflow-hidden">
-        <motion.div id={props.id} className="w-[90vw] sm:w-[70vw] h-[60vw] sm:h-[35vw] rounded-3xl "
+      <div id={props.id} className="p-10 pt-24 flex flex-col items-center w-screen h-full overflow-hidden">
+        <motion.div className="w-[90vw] sm:w-[70vw] h-[60vw] sm:h-[35vw] rounded-3xl "
           initial={{ boxShadow: "rgba(0, 0, 0, 0) 0px 5px 15px" }}
           animate={{ boxShadow: "rgba(0, 0, 0, 0.6) 0px 5px 15px" }}
           transition={{ duration: 0.9 }}
@@ -26,7 +27,10 @@ export function PageComponent(props: { id: string, layoutId: string, topImage: s
             backgroundSize: "cover",
           }}
           layoutId={props.layoutId}
-          onClick={() => setFirst(true)}
+          onClick={() => {
+            setPageScroll(true)
+            setFirst(true)
+          }}
         ></motion.div>
 
 

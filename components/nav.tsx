@@ -1,19 +1,22 @@
 'use client'
 import { handleScroll } from "@/lib/utils";
-import { ActiveState } from "@/recoil/atoms";
+import { ActiveState, PageScrollState } from "@/recoil/atoms";
 import { motion } from "framer-motion";
 import Link from "next/link";
 import { usePathname, useRouter, useSearchParams } from "next/navigation";
 import { useEffect, useState } from "react";
+import { useSetRecoilState } from "recoil";
 
 export default function Nav() {
   const [centerLogo, setCenterLogo] = useState(false)
   const [options, setOptions] = useState(false)
   const pathname = usePathname()
   const searchParams = useSearchParams()
-  const router = useRouter()
+  const setPageScroll = useSetRecoilState(PageScrollState)
+  // const router = useRouter()
   useEffect(() => {
     if ("/" === pathname) {
+      setPageScroll(true)
       setOptions(true)
       setCenterLogo(true)
     }
