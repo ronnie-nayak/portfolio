@@ -30,7 +30,7 @@ export default function Home() {
 
   return (
     <div data-scroll-container >
-      <div className="pt-20 xl:w-[1300px] w-3/4 mx-auto">
+      <div className="pt-20 xl:w-[1300px] sm:w-3/4 mx-auto">
         <Hero />
         <Projects />
         <AboutMe />

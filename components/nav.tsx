@@ -27,7 +27,7 @@ export default function Nav() {
   }, [pathname])
 
   return (
-    <nav className="bg-[#F5F5F5] fixed w-screen top-0 left-0 z-50">
+    <nav className="bg-[#F5F5F5] fixed w-screen top-0 left-0 z-50 p-1 sm:p-0">
       <ul className="flex items-center justify-center sm:justify-end gap-5 sm:mx-24 py-6 sm:text-[1.5vw] font-semi relative">
         <motion.div>
           <Link href="/">

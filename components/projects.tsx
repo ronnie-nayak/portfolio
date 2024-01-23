@@ -81,7 +81,7 @@ export default function Projects() {
   let { scrollYProgress } = useScroll({
     offset: ["start end", "end end"]
   })
-  let y = useTransform(scrollYProgress, [0, 1], ["-70%", "120%"])
+  let y = useTransform(scrollYProgress, [0, 1], ["-70%", "100%"])
   const [first, setFirst] = useState(false)
   const [second, setSecond] = useState(false)
   const [third, setThird] = useState(false)
@@ -93,7 +93,7 @@ export default function Projects() {
         {
           projectLinks.map((project, index) => (
             <div key={index} className="w-full sm:w-[30%]">
-              <div className="group  h-[10vh] sm:h-[60vh] rounded-2xl overflow-hidden  cursor-pointer  relative">
+              <div className="group  h-[40vw] sm:h-[60vh] rounded-2xl overflow-hidden  cursor-pointer  relative">
                 <motion.div className=""
                   variants={itemer}
                   layoutId={project.layoutId}
@@ -108,7 +108,7 @@ export default function Projects() {
                     }}
 
                     // whileHover={{ filter: "blur(2px)" }}
-                    className="h-[20vh] sm:h-[70vh]">
+                    className="h-[20vh] sm:h-[70vh] rounded-2xl">
                   </motion.div>
                   <div
                     onClick={() => {
