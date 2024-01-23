@@ -78,8 +78,10 @@ function TransitionComponent({ layoutId, link, middleImage }: { layoutId: string
 const data = ["project/eat-street.png", "project/save-up.png", "project/arm.png"]
 export default function Projects() {
   const router = useRouter()
-  let { scrollYProgress } = useScroll()
-  let y = useTransform(scrollYProgress, [0, 1], ["-50%", "100%"])
+  let { scrollYProgress } = useScroll({
+    offset: ["start end", "end end"]
+  })
+  let y = useTransform(scrollYProgress, [0, 1], ["-70%", "120%"])
   const [first, setFirst] = useState(false)
   const [second, setSecond] = useState(false)
   const [third, setThird] = useState(false)
