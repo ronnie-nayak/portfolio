@@ -62,9 +62,9 @@ function TransitionComponent({ layoutId, link, middleImage }: { layoutId: string
   const router = useRouter()
   return (
 
-    <div className="fixed top-0 left-0 p-24 flex flex-col items-center w-screen h-screen z-20"
+    <div className="fixed top-0 left-0 pt-24 flex flex-col items-center w-screen h-screen z-20"
     >
-      <motion.div layoutId={layoutId} className="w-[90vw] sm:w-[70vw] h-[60vw] sm:h-[40vw]"
+      <motion.div layoutId={layoutId} className="w-[90vw] sm:w-[70vw] h-[60vw] sm:h-[35vw] rounded-3xl"
         onLayoutAnimationComplete={() => router.push(link)}
         style={{
           background: middleImage,
