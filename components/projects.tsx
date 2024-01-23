@@ -36,7 +36,9 @@ const projectLinks = [{
   setterFunction: "first",
   smallImage: "/project/small-eat.png",
   middleImage: "url('/project/eat-street.png') center ",
-  link: "/eat-street#eat-street"
+  link: "/eat-street#eat-street",
+  website: "https://eat-street-web.vercel.app/",
+  github: "https://github.com/ronnie-nayak/eat-street"
 }, {
   name: "Save-Up",
   layoutId: "1",
@@ -45,7 +47,9 @@ const projectLinks = [{
   setterFunction: "second",
   smallImage: "/project/small-save.png",
   middleImage: "url('/project/save-up.png') center",
-  link: "/save-up#save-up"
+  link: "/save-up#save-up",
+  website: "https://save-up-web.vercel.app/",
+  github: "https://github.com/ronnie-nayak/save-up"
 }, {
   name: "Portfolio Website",
   layoutId: "2",
@@ -54,7 +58,9 @@ const projectLinks = [{
   setterFunction: "third",
   smallImage: "/project/small-arn.jpeg",
   middleImage: "url('/project/arn.png') center",
-  link: "/arn#arn"
+  link: "/arn#arn",
+  website: "https://abhishek-ron-nayak.vercel.app/",
+  github: "https://github.com/ronnie-nayak/portfolio"
 
 }]
 
@@ -129,8 +135,8 @@ export default function Projects() {
                 whileInView="show"
               >
                 <h1 className="text-[6vw] sm:text-[2.5vw] mb-2 underline">{project.name}</h1>
-                <Link href="" className="linker"><h2>Visit Website</h2><TbWorld size={45} /><LuArrowUpRight size={45} /></Link>
-                <Link href="" className="linker"><h2>Github Code</h2><FaGithub size={45} /><LuArrowUpRight size={45} /></Link>
+                <a target="_blank" href={project.website} className="linker"><h2>Visit Website</h2><TbWorld size={45} /><LuArrowUpRight size={45} /></a>
+                <a target="_blank" href={project.github} className="linker"><h2>Github Code</h2><FaGithub size={45} /><LuArrowUpRight size={45} /></a>
               </motion.div>
             </div>
           ))

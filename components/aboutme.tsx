@@ -56,15 +56,15 @@ export default function AboutMe() {
             <h2 className="mt-9 sm:text-[1.75vw]">Socials :</h2>
           </div>
           <div className="flex gap-16 items-center">
-            <Link href="https://github.com/ronnie-nayak">
+            <a target="_blank" href="https://github.com/ronnie-nayak">
               <Image className="hover:scale-110 transition duration-200" alt="github" src="/github.svg" width={90} height={90} />
-            </Link>
-            <Link href="https://www.linkedin.com/in/abhishek-r-nayak/">
+            </a>
+            <a target="_blank" href="https://www.linkedin.com/in/abhishek-r-nayak/">
               <Image className="hover:scale-110 transition duration-200" alt="linkedin" src="/linkedin.svg" width={110} height={110} />
-            </Link>
-            <Link href="https://wa.me/919821245180?text=Hey%20let's%20chat">
+            </a>
+            <a target="_blank" href="https://wa.me/919821245180?text=Hey%20let's%20chat">
               <Image className="hover:scale-110 transition duration-200" alt="whatsapp" src="/whatsapp.svg" width={110} height={110} />
-            </Link>
+            </a>
           </div>
         </div >
 
