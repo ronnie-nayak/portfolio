@@ -6,17 +6,18 @@ import { useState } from "react";
 import { FaGithub } from "react-icons/fa";
 import { TbWorld } from "react-icons/tb";
 import { LuArrowUpRight } from "react-icons/lu";
+import { useSetRecoilState } from "recoil";
+import { PageScrollState } from "@/recoil/atoms";
 
 export function PageComponent(props: { id: string, layoutId: string, topImage: string, title: string, heading: string, description: string, firstImage: string, firstImageSize: string, secondImage: string, secondImageSize: string, thirdImage: string, thirdImageSize: string, builtWith: string[], website: string, github: string }) {
   const router = useRouter()
 
   const [first, setFirst] = useState(false)
-
   const data = ["", "", ""]
   return (
     <>
-      <div id={props.id} className="p-10 pt-24 flex flex-col items-center w-screen h-full">
-        <motion.div className="w-[90vw] sm:w-[70vw] h-[60vw] sm:h-[35vw] rounded-3xl "
+      <div className="p-10 pt-24 flex flex-col items-center w-screen h-full overflow-hidden">
+        <motion.div id={props.id} className="w-[90vw] sm:w-[70vw] h-[60vw] sm:h-[35vw] rounded-3xl "
           initial={{ boxShadow: "rgba(0, 0, 0, 0) 0px 5px 15px" }}
           animate={{ boxShadow: "rgba(0, 0, 0, 0.6) 0px 5px 15px" }}
           transition={{ duration: 0.9 }}
@@ -110,7 +111,7 @@ export function PageComponent(props: { id: string, layoutId: string, topImage: s
       {
         first &&
 
-        <motion.div className="fixed top-0 left-0 p-24 grid place-items-center w-screen h-screen bg-cream z-10 "
+        <motion.div className="fixed top-0 left-0 p-24 grid place-items-center w-screen h-screen bg-cream z-10 overscroll-y-contain"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.9 }}

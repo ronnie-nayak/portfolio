@@ -13,7 +13,7 @@ export default function Nav() {
   const searchParams = useSearchParams()
   const router = useRouter()
   useEffect(() => {
-    if (["/", "/#hero", '/#projects', '/#about', '/#contact'].includes(pathname)) {
+    if ("/" === pathname) {
       setOptions(true)
       setCenterLogo(true)
     }

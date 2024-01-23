@@ -5,7 +5,7 @@ export const ActiveState = atom({
   default: "hero",
 });
 
-export const FirstImageState = atom({
-  key: 'FirstImageState',
-  default: false,
+export const PageScrollState = atom({
+  key: 'PageScrollState',
+  default: true,
 });

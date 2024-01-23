@@ -6,6 +6,8 @@ import { useRef, useState } from "react";
 import { FaGithub } from "react-icons/fa";
 import { TbWorld } from "react-icons/tb";
 import { LuArrowUpRight } from "react-icons/lu";
+import { useSetRecoilState } from "recoil";
+import { PageScrollState } from "@/recoil/atoms";
 
 const container = {
   show: {
@@ -92,6 +94,8 @@ export default function Projects() {
   const [first, setFirst] = useState(false)
   const [second, setSecond] = useState(false)
   const [third, setThird] = useState(false)
+
+  const setPageScroll = useSetRecoilState(PageScrollState)
   return (
     <div id="projects" className="p-9 sm:pt-40">
       <h2 className="sm:text-[2.25vw] font-bold mb-5">Projects</h2>
@@ -163,6 +167,9 @@ export default function Projects() {
           initial={{ opacity: 0, filter: "blur(2px)" }}
           animate={{ opacity: 1, filter: "blur(1px)" }}
           transition={{ duration: 0.9 }}
+
+          onAnimationStart={() => setPageScroll(false)}
+          onAnimationComplete={() => setPageScroll(true)}
         >
         </motion.div >
       }
