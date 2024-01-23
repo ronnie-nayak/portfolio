@@ -24,10 +24,12 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en" >
+    <html lang="en" className='sm:[text-0.85vw]'>
       <body className={myFont.className}>
         <Wrapper>
-          {children}
+          <div className="bg-cream">
+            {children}
+          </div>
         </Wrapper>
       </body>
     </html >

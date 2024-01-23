@@ -1,15 +1,23 @@
+import { ContactForm } from "./contactForm";
+
 export default function Contact() {
+
   return (
-    <div id="contact" className="p-9 pt-40">
-      <h2 className="text-5xl font-bold mb-5">Say Hello</h2>
+    <div id="contact" className="p-9 sm:pt-40">
+      <h2 className="sm:text-[2.25vw] font-bold mb-5">Say Hello</h2>
       <div className="border border-black mb-16 mr-5"></div>
-      <div className="flex gap-10">
-        <div className="bg-[F5F5F5] text-2xl w-full">
-          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+      <div className="flex flex-col sm:flex-row gap-10">
+        <div className="bg-[F5F5F5] sm:text-[1.75vw] w-8/12">
+          Looking to start a project or just want to say hi? Send me an email and I’ll do my best to reply within 24 hours!
+          <br />
+          <br />
+          If contact forms aren’t your thing, you can also send me an email at<br />
+          <a href="mailto:abhishek.ron.nayak@gmail.com" className="underline font-bold mt-5 block">abhishek.ron.nayak@gmail.com</a>
+          <h2 className="mt-8 font-bold ">Phone: +91 98212 45180</h2>
         </div>
-        <div className="w-full">
-          <h2 className="text-3xl font-bold mb-5">Branding / Logo</h2>
-          <div className="border border-black mb-16 mr-5"></div>
+        <div className="w-full px-10">
+
+          <ContactForm />
         </div >
       </div>
     </div>
