@@ -36,6 +36,7 @@ export const pageLinks = [{
   secondImageSize: "120%",
   thirdImage: "url('/project/eat-page/cart.png') 50% 66% ",
   thirdImageSize: "160%",
+  builtWith: ["/logos/next.svg", "/logos/typescript.svg", "/logos/react.png", "/logos/tailwind.svg", "/logos/mongo.svg"]
 }, {
   id: "save-up",
   layoutId: "1project",
@@ -49,6 +50,7 @@ export const pageLinks = [{
   secondImageSize: "160%",
   thirdImage: "url('/project/save-page/bills.png') left top ",
   thirdImageSize: "160%",
+  builtWith: ["/logos/next.svg", "/logos/typescript.svg", "/logos/react.png", "/logos/trpc.svg", "/logos/drizzle.jpg", "/logos/turbo.svg"]
 }, {
   id: "arn",
   layoutId: "2project",
@@ -62,7 +64,7 @@ export const pageLinks = [{
   secondImageSize: "150%",
   thirdImage: "url('/project/big-arn.png') 50% 86% ",
   thirdImageSize: "160%",
-
+  builtWith: ["/logos/next.svg", "/logos/typescript.svg", "/logos/react.png", "/logos/tailwind.svg", "/logos/framer-motion.svg"]
 }]
 
 

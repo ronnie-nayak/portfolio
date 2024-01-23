@@ -14,7 +14,6 @@ export default function Nav() {
   const router = useRouter()
   useEffect(() => {
     if (["/", "/#hero", '/#projects', '/#about', '/#contact'].includes(pathname)) {
-      console.log("true")
       setOptions(true)
       setCenterLogo(true)
     }
@@ -29,7 +28,7 @@ export default function Nav() {
 
   return (
     <nav className="bg-[#F5F5F5] fixed w-screen top-0 left-0 z-50">
-      <ul className="flex items-center justify-end gap-5 mx-24 py-6 sm:text-[1.5vw] font-semi relative">
+      <ul className="flex items-center justify-center sm:justify-end gap-5 sm:mx-24 py-6 sm:text-[1.5vw] font-semi relative">
         <motion.div>
           <Link href="/">
             <img className={`mr-auto h-40 absolute -top-10 ${centerLogo ? "hidden sm:block left-0" : "left-1/2 -translate-x-1/2"} transition-all duration-300`} src='/arn.jpeg' alt='logo' style={{

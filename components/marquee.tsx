@@ -12,7 +12,8 @@ const links = [
   "/logos/turbo.svg",
   "/logos/typescript.svg",
   "/logos/react.png",
-  "/logos/mongo.svg"
+  "/logos/mongo.svg",
+  "/logos/framer-motion.svg",
 ];
 
 export function MarqueeComp() {

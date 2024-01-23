@@ -3,7 +3,7 @@ import { AnimatePresence, motion, useScroll, useTransform } from "framer-motion"
 import { useRouter } from "next/navigation";
 import { useState } from "react";
 
-export function PageComponent(props: { id: string, layoutId: string, topImage: string, title: string, heading: string, description: string, firstImage: string, firstImageSize: string, secondImage: string, secondImageSize: string, thirdImage: string, thirdImageSize: string }) {
+export function PageComponent(props: { id: string, layoutId: string, topImage: string, title: string, heading: string, description: string, firstImage: string, firstImageSize: string, secondImage: string, secondImageSize: string, thirdImage: string, thirdImageSize: string, builtWith: string[] }) {
   const router = useRouter()
 
   const [first, setFirst] = useState(false)
@@ -25,20 +25,26 @@ export function PageComponent(props: { id: string, layoutId: string, topImage: s
         ></motion.div>
 
 
+        <div className="sm:px-40 py-20">
+          <motion.div className="flex flex-col sm:flex-row "
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+          >
+            <div className="w-full">
+              <h1 className="sm:text-[2.5vw] mb-2">{props.title}</h1>
+              <h2 className="sm:text-[2vw] underline">{props.heading}</h2>
+            </div>
 
-        <motion.div className="flex flex-col sm:flex-row sm:px-40 py-20"
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-        >
-          <div className="w-full">
-            <h1 className="sm:text-[2.5vw] mb-2">{props.title}</h1>
-            <h2 className="sm:text-[2vw] underline">{props.heading}</h2>
+            <p className="w-full sm:text-[1.5vw]">
+              {props.description}
+            </p>
+          </motion.div>
+          <div className="flex gap-9">
+            {
+              props.builtWith.map((item, index) => (<img src={item} key={index} className="w-20 h-20" />))
+            }
           </div>
-
-          <p className="w-full sm:text-[1.5vw]">
-            {props.description}
-          </p>
-        </motion.div>
+        </div>
 
 
         <motion.div className="w-[70vw] h-[20vh] sm:h-[70vh] rounded-3xl mb-14 "

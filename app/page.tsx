@@ -6,6 +6,7 @@ import { MarqueeComp } from "@/components/marquee";
 import Nav from "@/components/nav";
 import Projects from "@/components/projects";
 import { Reviews } from "@/components/reviews";
+import Skill from "@/components/skill";
 import { handleScroll } from "@/lib/utils";
 import LocomotiveScroll from "locomotive-scroll";
 import { useSearchParams } from "next/navigation";
@@ -34,6 +35,7 @@ export default function Home() {
         <Projects />
         <AboutMe />
         <MarqueeComp />
+        <Skill />
         <Contact />
         <Reviews />
       </div>

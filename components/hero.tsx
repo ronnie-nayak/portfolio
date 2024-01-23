@@ -14,7 +14,7 @@ export default function Hero() {
         color: "#282828",
         fontWeight: "300",
         lineHeight: "1.4",
-        textShadow: "0 1px 0 rgba(255, 255, 255, 0.9)",
+        textShadow: "0 1px 0 rgba(255, 255, 255, 20)",
       }} className="absolute mt-14 sm:mt-[200px] z-10 w-[70%] sm:text-[1.70vw]">
         <TypeAnimation
           sequence={[

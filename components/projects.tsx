@@ -1,7 +1,11 @@
 import { handleScroll } from "@/lib/utils";
 import { AnimatePresence, motion, useScroll, useTransform } from "framer-motion";
+import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { useState } from "react";
+import { FaGithub } from "react-icons/fa";
+import { TbWorld } from "react-icons/tb";
+import { LuArrowUpRight } from "react-icons/lu";
 
 const container = {
   show: {
@@ -83,47 +87,57 @@ export default function Projects() {
       <motion.div variants={container} initial="hidden" whileInView="show" className="bg-[F5F5F5] flex flex-col sm:flex-row gap-9">
         {
           projectLinks.map((project, index) => (
-            <div className="group w-full sm:w-[30%] h-[10vh] sm:h-[60vh] rounded-2xl overflow-hidden  cursor-pointer  relative">
-              <motion.div className=""
-                variants={itemer}
-                layoutId={project.layoutId}
-              >
-                <motion.div
+            <div key={index} className="w-full sm:w-[30%]">
+              <div className="group  h-[10vh] sm:h-[60vh] rounded-2xl overflow-hidden  cursor-pointer  relative">
+                <motion.div className=""
+                  variants={itemer}
+                  layoutId={project.layoutId}
+                >
+                  <motion.div
 
-                  whileHover={{ backdropFilter: "blur(2px)" }}
-                  style={{
-                    background: project.bigImage,
-                    backgroundSize: project.imageSize,
-                    y
-                  }}
+                    whileHover={{ backdropFilter: "blur(2px)" }}
+                    style={{
+                      background: project.bigImage,
+                      backgroundSize: project.imageSize,
+                      y
+                    }}
 
-                  // whileHover={{ filter: "blur(2px)" }}
-                  className="h-[20vh] sm:h-[70vh]">
+                    // whileHover={{ filter: "blur(2px)" }}
+                    className="h-[20vh] sm:h-[70vh]">
+                  </motion.div>
+                  <div
+                    onClick={() => {
+                      if (project.setterFunction === "first") setFirst(true)
+                      if (project.setterFunction === "second") setSecond(true)
+                      if (project.setterFunction === "third") setThird(true)
+                    }}
+                    className="absolute w-full h-full top-0 left-0 group-hover:backdrop-blur-[2px]">
+
+                    <img src={project.smallImage} className="group-hover:opacity-100 opacity-0 transition duration-500 h-16 sm:h-40 z-10 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 rounded-3xl" />
+                  </div>
                 </motion.div>
-                <div
-                  onClick={() => {
-                    if (project.setterFunction === "first") setFirst(true)
-                    if (project.setterFunction === "second") setSecond(true)
-                    if (project.setterFunction === "third") setThird(true)
-                  }}
-                  className="absolute w-full h-full top-0 left-0 group-hover:backdrop-blur-[2px]">
 
-                  <img src={project.smallImage} className="group-hover:opacity-100 opacity-0 transition duration-500 h-16 sm:h-40 z-10 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 rounded-3xl" />
-                </div>
+              </div>
+              <motion.div className="flex flex-col mt-9"
+                variants={itemer}
+                initial="hidden"
+                whileInView="show"
+              >
+                <Link href="" className="linker"><h2>Visit Website</h2><TbWorld size={45} /><LuArrowUpRight size={45} /></Link>
+                <Link href="" className="linker"><h2>Github Code</h2><FaGithub size={45} /><LuArrowUpRight size={45} /></Link>
               </motion.div>
-
             </div>
           ))
         }
 
 
 
-      </motion.div>
+      </motion.div >
       {
         projectLinks.map((project, index) => {
-          if (project.setterFunction === "first" && first) return <TransitionComponent layoutId={project.layoutId} link={project.link} middleImage={project.middleImage} />
-          if (project.setterFunction === "second" && second) return <TransitionComponent layoutId={project.layoutId} link={project.link} middleImage={project.middleImage} />
-          if (project.setterFunction === "third" && third) return <TransitionComponent layoutId={project.layoutId} link={project.link} middleImage={project.middleImage} />
+          if (project.setterFunction === "first" && first) return <TransitionComponent key={`first ${index}`} layoutId={project.layoutId} link={project.link} middleImage={project.middleImage} />
+          if (project.setterFunction === "second" && second) return <TransitionComponent key={`second ${index}`} layoutId={project.layoutId} link={project.link} middleImage={project.middleImage} />
+          if (project.setterFunction === "third" && third) return <TransitionComponent key={`third ${index}`} layoutId={project.layoutId} link={project.link} middleImage={project.middleImage} />
         })
       }
 
