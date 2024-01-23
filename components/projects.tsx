@@ -100,7 +100,7 @@ export default function Projects() {
     <div id="projects" className="p-9 sm:pt-40">
       <h2 className="sm:text-[2.25vw] font-bold mb-5">Projects</h2>
       <div className="border border-black mb-16 mr-5"></div>
-      <motion.div ref={scrollRef} variants={container} initial="hidden" whileInView="show" className="bg-[F5F5F5] flex flex-col sm:flex-row gap-9">
+      <motion.div ref={scrollRef} variants={container} initial="hidden" whileInView="show" viewport={{ once: true }} className="bg-[F5F5F5] flex flex-col sm:flex-row gap-9">
         {
           projectLinks.map((project, index) => (
             <div key={index} className="w-full sm:w-[30%]">
@@ -123,6 +123,8 @@ export default function Projects() {
                   </motion.div>
                   <div
                     onClick={() => {
+                      setPageScroll(false)
+                      window.scrollTo(0, 0)
                       if (project.setterFunction === "first") setFirst(true)
                       if (project.setterFunction === "second") setSecond(true)
                       if (project.setterFunction === "third") setThird(true)
@@ -168,8 +170,8 @@ export default function Projects() {
           animate={{ opacity: 1, filter: "blur(1px)" }}
           transition={{ duration: 0.9 }}
 
-          onAnimationStart={() => setPageScroll(false)}
-          onAnimationComplete={() => setPageScroll(true)}
+        // onAnimationStart={() => setPageScroll(false)}
+        // onAnimationComplete={() => setPageScroll(true)}
         >
         </motion.div >
       }
