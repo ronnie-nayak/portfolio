@@ -3,7 +3,11 @@ import { AnimatePresence, motion, useScroll, useTransform } from "framer-motion"
 import { useRouter } from "next/navigation";
 import { useState } from "react";
 
-export function PageComponent(props: { id: string, layoutId: string, topImage: string, title: string, heading: string, description: string, firstImage: string, firstImageSize: string, secondImage: string, secondImageSize: string, thirdImage: string, thirdImageSize: string, builtWith: string[] }) {
+import { FaGithub } from "react-icons/fa";
+import { TbWorld } from "react-icons/tb";
+import { LuArrowUpRight } from "react-icons/lu";
+
+export function PageComponent(props: { id: string, layoutId: string, topImage: string, title: string, heading: string, description: string, firstImage: string, firstImageSize: string, secondImage: string, secondImageSize: string, thirdImage: string, thirdImageSize: string, builtWith: string[], website: string, github: string }) {
   const router = useRouter()
 
   const [first, setFirst] = useState(false)
@@ -33,6 +37,10 @@ export function PageComponent(props: { id: string, layoutId: string, topImage: s
             <div className="w-full">
               <h1 className="sm:text-[2.5vw] mb-2">{props.title}</h1>
               <h2 className="sm:text-[2vw] underline">{props.heading}</h2>
+              <div className="flex flex-col sm:flex-row gap-4 m-8 ml-0">
+                <a target="_blank" href={props.website} className="linker"><h2>Visit Website</h2><TbWorld size={45} /><LuArrowUpRight size={45} /></a>
+                <a target="_blank" href={props.github} className="linker"><h2>Github Code</h2><FaGithub size={45} /><LuArrowUpRight size={45} /></a>
+              </div>
             </div>
 
             <p className="w-full sm:text-[1.5vw] mb-2">

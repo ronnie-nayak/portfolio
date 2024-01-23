@@ -36,6 +36,8 @@ export const pageLinks = [{
   secondImageSize: "120%",
   thirdImage: "url('/project/eat-page/cart.png') 50% 66% ",
   thirdImageSize: "160%",
+  website: "https://eat-street-web.vercel.app/",
+  github: "https://github.com/ronnie-nayak/eat-street",
   builtWith: ["/logos/next.svg", "/logos/typescript.svg", "/logos/react.png", "/logos/tailwind.svg", "/logos/mongo.svg"]
 }, {
   id: "save-up",
@@ -50,6 +52,8 @@ export const pageLinks = [{
   secondImageSize: "160%",
   thirdImage: "url('/project/save-page/bills.png') left top ",
   thirdImageSize: "160%",
+  website: "https://save-up-web.vercel.app/",
+  github: "https://github.com/ronnie-nayak/save-up",
   builtWith: ["/logos/next.svg", "/logos/typescript.svg", "/logos/react.png", "/logos/trpc.svg", "/logos/drizzle.jpg", "/logos/turbo.svg"]
 }, {
   id: "arn",
@@ -64,6 +68,8 @@ export const pageLinks = [{
   secondImageSize: "150%",
   thirdImage: "url('/project/big-arn.png') 50% 86% ",
   thirdImageSize: "160%",
+  website: "https://abhishek-ron-nayak.vercel.app/",
+  github: "https://github.com/ronnie-nayak/portfolio",
   builtWith: ["/logos/next.svg", "/logos/typescript.svg", "/logos/react.png", "/logos/tailwind.svg", "/logos/framer-motion.svg"]
 }]
 

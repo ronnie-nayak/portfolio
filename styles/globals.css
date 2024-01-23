@@ -91,5 +91,5 @@
 }
 
 .linker {
-  @apply text-black bg-cream border border-black rounded-lg font-bold p-2 px-5 text-[3.75vw] sm:text-[1.75vw] tracking-wider w-full mt-4 flex gap-4 items-center
+  @apply text-black bg-cream border border-black rounded-lg font-bold p-2 px-5 text-[3.75vw] sm:text-[1.5vw] tracking-wider w-full mt-4 flex gap-4 items-center
 }

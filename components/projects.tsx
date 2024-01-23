@@ -2,7 +2,7 @@ import { handleScroll } from "@/lib/utils";
 import { AnimatePresence, motion, useScroll, useTransform } from "framer-motion";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
-import { useState } from "react";
+import { useRef, useState } from "react";
 import { FaGithub } from "react-icons/fa";
 import { TbWorld } from "react-icons/tb";
 import { LuArrowUpRight } from "react-icons/lu";
@@ -83,7 +83,8 @@ function TransitionComponent({ layoutId, link, middleImage }: { layoutId: string
 
 const data = ["project/eat-street.png", "project/save-up.png", "project/arm.png"]
 export default function Projects() {
-  const router = useRouter()
+  const scrollRef = useRef(null)
+  // const router = useRouter()
   let { scrollYProgress } = useScroll({
     offset: ["start end", "end end"]
   })
@@ -95,7 +96,7 @@ export default function Projects() {
     <div id="projects" className="p-9 sm:pt-40">
       <h2 className="sm:text-[2.25vw] font-bold mb-5">Projects</h2>
       <div className="border border-black mb-16 mr-5"></div>
-      <motion.div variants={container} initial="hidden" whileInView="show" className="bg-[F5F5F5] flex flex-col sm:flex-row gap-9">
+      <motion.div ref={scrollRef} variants={container} initial="hidden" whileInView="show" className="bg-[F5F5F5] flex flex-col sm:flex-row gap-9">
         {
           projectLinks.map((project, index) => (
             <div key={index} className="w-full sm:w-[30%]">
@@ -133,6 +134,7 @@ export default function Projects() {
                 variants={itemer}
                 initial="hidden"
                 whileInView="show"
+                viewport={{ root: scrollRef }}
               >
                 <h1 className="text-[6vw] sm:text-[2.5vw] mb-2 underline">{project.name}</h1>
                 <a target="_blank" href={project.website} className="linker"><h2>Visit Website</h2><TbWorld size={45} /><LuArrowUpRight size={45} /></a>
