@@ -17,12 +17,12 @@ export function PageComponent(props: { id: string, layoutId: string, topImage: s
   const data = ["", "", ""]
   return (
     <>
-      <div id={props.id} className={`p-10 pt-24 flex flex-col items-center w-screen ${pageScroll ? "h-full" : "h-screen"} overflow-hidden`}>
+      <div id={props.id} className={`p-10 pt-24 flex flex-col items-center w-screen ${pageScroll ? "h-full" : "h-screen"} overflow-hidden overscroll-none`}>
         <div>
-          <motion.div className="w-[90vw] sm:w-[70vw] h-[60vw] sm:h-[35vw] rounded-3xl "
+          <motion.div className="w-[90vw] sm:w-[70vw] h-[60vw] sm:h-[35vw] rounded-3xl"
             initial={{ boxShadow: "rgba(0, 0, 0, 0) 0px 5px 15px" }}
             animate={{ boxShadow: "rgba(0, 0, 0, 1) 0px 5px 15px" }}
-            transition={{ duration: 0.3 }}
+            transition={{ duration: 0.7 }}
             onAnimationComplete={() => setPageScroll(true)}
             style={{
               background: props.topImage,
