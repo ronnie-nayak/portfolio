@@ -1,5 +1,5 @@
 import Marquee from "react-fast-marquee";
-import Image from 'next/image'
+import Image from "next/image";
 
 const links = [
   "/logos/node.svg",
@@ -20,8 +20,17 @@ export function MarqueeComp() {
   return (
     <div className="mt-20">
       <Marquee>
-        {links.map((link, i) => (<Image key={i} alt={link} className="mx-9 text-[20vw]" src={link} width={100} height={100} />))}
+        {links.map((link, i) => (
+          <Image
+            key={i}
+            alt={link}
+            className="mx-9 text-[20vw]"
+            src={link}
+            width={100}
+            height={100}
+          />
+        ))}
       </Marquee>
     </div>
-  )
+  );
 }

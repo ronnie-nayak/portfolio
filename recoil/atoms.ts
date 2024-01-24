@@ -1,11 +1,11 @@
-import { atom } from 'recoil';
+import { atom } from "recoil";
 
 export const ActiveState = atom({
-  key: 'ActiveState',
+  key: "ActiveState",
   default: "hero",
 });
 
 export const PageScrollState = atom({
-  key: 'PageScrollState',
+  key: "PageScrollState",
   default: true,
 });

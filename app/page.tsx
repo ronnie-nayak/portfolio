@@ -1,4 +1,4 @@
-'use client'
+"use client";
 import AboutMe from "@/components/aboutme";
 import Contact from "@/components/contact";
 import Hero from "@/components/hero";
@@ -14,29 +14,27 @@ import { useSearchParams } from "next/navigation";
 import { useEffect } from "react";
 import { useRecoilState, useRecoilValue } from "recoil";
 
-
-
 export default function Home() {
   useEffect(() => {
-
     async function caller() {
-      const LocomotiveScroll = (await import('locomotive-scroll')).default;
+      const LocomotiveScroll = (await import("locomotive-scroll")).default;
       const scroll = new LocomotiveScroll({
         smooth: true,
         tablet: {
           breakpoint: 0,
-          smooth: true
-        }
-      })
-
+          smooth: true,
+        },
+      });
     }
-    caller()
-  }, [])
+    caller();
+  }, []);
 
-  const pageScroll = useRecoilValue(PageScrollState)
+  const pageScroll = useRecoilValue(PageScrollState);
   return (
-    <div data-scroll-container >
-      <div className={`pt-20 xl:w-[1300px] sm:w-3/4 mx-auto ${pageScroll ? "" : "h-screen overflow-hidden"} `}>
+    <div data-scroll-container>
+      <div
+        className={`pt-20 xl:w-[1300px] sm:w-3/4 mx-auto ${pageScroll ? "" : "h-screen overflow-hidden"} `}
+      >
         <Hero />
         <Projects />
         <AboutMe />
@@ -46,7 +44,5 @@ export default function Home() {
         <Reviews />
       </div>
     </div>
-  )
+  );
 }
-
-
