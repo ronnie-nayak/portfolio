@@ -39,7 +39,7 @@ const customAni = {
 
 export default function Skill() {
   return (
-    <div className="  scroll-mt-28 text-center sm:mb-40 mx-auto">
+    <div className="  scroll-mt-28 text-center mx-auto">
       <h2 className="my-10 sm:text-[2vw] font-bold underline">
         Technologies I have worked with
       </h2>

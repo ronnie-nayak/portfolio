@@ -9,7 +9,7 @@ export function cn(...inputs: ClassValue[]) {
 export const handleScroll = (hrefId: string) => {
   // first prevent the d
   //efault behavior
-  let deviation = 70;
+  let deviation = 0;
   const targetId = hrefId.replace(/.*\#/, "");
   if (targetId === "hero") deviation = 0;
   if (window.screen.width < 640) deviation = -50;
