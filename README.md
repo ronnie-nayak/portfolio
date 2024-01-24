@@ -1,36 +1,81 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Portfolio Website
 
-## Getting Started
+My Portfolio Website showcasing my projects and experience.
 
-First, run the development server:
+
+## Screenshots
+
+![Screenshot 2024-01-24 at 15-15-09 Abhishek R Nayak](https://github.com/ronnie-nayak/portfolio/assets/60402476/1462e62a-7660-4d97-9f37-4205bd509f55)
+
+
+## Features
+
+- Beautiful Framer Motions Animations
+- Sleek UI/UX design
+- Responsive Design
+- Working Contact Form
+
+
+## Tech Stack
+
+**Client:** React, TailwindCSS
+
+**Server:** NextJS, TypeScript
+
+## Visit Deployed Project
+
+**Link:** https://abhishek-ron-nayak.vercel.app/
+
+
+## Run Locally
+
+Clone the project
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+  git clone https://github.com/ronnie-nayak/portfolio
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Go to the project directory
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+  cd portfolio
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+Install dependencies
 
-## Learn More
+```bash
+  npm install
+```
 
-To learn more about Next.js, take a look at the following resources:
+Build the Project
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```bash
+  npm run build
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+Run Build Files
 
-## Deploy on Vercel
+```bash
+  npm run start
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## Authors
+
+- [@ronnie-nayak](https://github.com/ronnie-nayak)
+
+
+## Acknowledgements
+
+ - [Design Reference](https://www.figma.com/community/file/1059588617705355339)
+
+
+## Feedback
+
+If you have any feedback, please reach out to us at abhishek.ron.nayak@gmail.com
+
+
+## License
+
+[MIT](https://choosealicense.com/licenses/mit/)
+
