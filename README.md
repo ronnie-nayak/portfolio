@@ -5,7 +5,7 @@ My Portfolio Website showcasing my projects and experience.
 
 ## Screenshots
 
-![Screenshot 2024-01-24 at 15-15-09 Abhishek R Nayak](https://github.com/ronnie-nayak/portfolio/assets/60402476/1462e62a-7660-4d97-9f37-4205bd509f55)
+![Screenshot 2024-01-24 at 22-33-09 Abhishek R Nayak](https://github.com/ronnie-nayak/portfolio/assets/60402476/420994f9-25e3-41f8-81ca-b467c09186f1)
 
 
 ## Features
