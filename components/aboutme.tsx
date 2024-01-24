@@ -69,7 +69,7 @@ export default function AboutMe() {
             <h2 className="sm:text-[2vw] mb-5 w-6/12">Contact Info</h2>
             <div className="border border-black mb-4 w-full "></div>
           </div>
-          <div className="self-start py-4 font-bold sm:text-[2vw] ">
+          <div className="self-start py-4 font-bold sm:text-[1.95vw] ">
             <h2 className="mb-4">Email: abhishek.ron.nayak@gmail.com</h2>
             <h2>Phone: +91 98212 45180 </h2>
             <h2 className="mt-9 sm:text-[1.75vw]">Socials :</h2>
