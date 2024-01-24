@@ -38,15 +38,15 @@ export default function Nav() {
           </Link>
         </div>
         <div
-          className={`mr-auto z-50 h-28 absolute -top-10 ${centerLogo ? "left-1/2 -translate-x-1/2" : "hidden sm:block left-0"} transition-all duration-700 bg-cream px-10`}
+          className={`mr-auto z-50 h-28 absolute -top-10 ${centerLogo ? "left-1/2 -translate-x-1/2" : "hidden sm:block left-0"} transition-all duration-700 bg-cream px-10 rounded-full`}
         >
           <Link href="/">
             <img
               className="h-40"
-              src="/arn.jpeg"
+              src="/arn.png"
               alt="logo"
               style={{
-                clipPath: "inset(30% 10% 30% 10%)",
+                clipPath: "inset(30% 10% 30% 10% round 15%)",
               }}
             />
           </Link>

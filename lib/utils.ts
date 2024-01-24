@@ -9,7 +9,7 @@ export function cn(...inputs: ClassValue[]) {
 export const handleScroll = (hrefId: string) => {
   // first prevent the d
   //efault behavior
-  let deviation = 0;
+  let deviation = 70;
   const targetId = hrefId.replace(/.*\#/, "");
   if (targetId === "hero") deviation = 0;
   if (window.screen.width < 640) deviation = -50;
@@ -81,11 +81,11 @@ export const pageLinks = [
     description:
       "I build my projects with a lot of care and really love seeing my work come to life. I hope you could see the effort I am willing to put in to learn what I don't know through constant trial and error. If you wish to be in contact, give me a call on +91-9821245180, send an email at abhishek.ron.nayak@gmail.com or fill the contact form on the main page. Hope to be of help.",
     firstImage: "url('/project/arn-page/projects.png') center ",
-    firstImageSize: "100%",
+    firstImageSize: "115%",
     secondImage: "url('/project/big-arn.png') 50% 0% ",
     secondImageSize: "150%",
-    thirdImage: "url('/project/big-arn.png') 50% 86% ",
-    thirdImageSize: "160%",
+    thirdImage: "url('/project/big-arn.png') 50% 100% ",
+    thirdImageSize: "120%",
     website: "https://abhishek-ron-nayak.vercel.app/",
     github: "https://github.com/ronnie-nayak/portfolio",
     builtWith: [

@@ -65,7 +65,7 @@ const projectLinks = [
     bigImage: "url('/project/big-arn.png') 50% 65%",
     imageSize: "200%",
     setterFunction: "third",
-    smallImage: "/project/small-arn.jpeg",
+    smallImage: "/project/small-arn.png",
     middleImage: "url('/project/arn.png') center",
     link: "/arn#arn",
     website: "https://abhishek-ron-nayak.vercel.app/",

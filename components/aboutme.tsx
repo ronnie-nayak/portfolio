@@ -22,7 +22,7 @@ export default function AboutMe() {
             experience.
           </p>
           <p className="mb-24">
-            I like to dive into the conplexities of todays tech environment
+            I like to dive into the complexities of todays tech environment
             while experiencing and growing with the community. I am passionate
             about the field and there is nothing better than having like-minded
             people to share your pursuits with.
