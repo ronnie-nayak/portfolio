@@ -20,19 +20,19 @@ export default function AboutMe() {
           <Accordion type="single" collapsible className="w-full">
             <AccordionItem value="item-1" className="border-black">
               <AccordionTrigger>Which Tech Stack do I work with?</AccordionTrigger>
-              <AccordionContent className="sm:text-[1.5vw]">
+              <AccordionContent className="sm:text-[1.5vw] leading-8">
                 Most recently I'm having fun with the T3 stack in a turborepo. I'm also familiar with MERN and its use-cases.
               </AccordionContent>
             </AccordionItem>
             <AccordionItem value="item-2" className="border-black">
               <AccordionTrigger>Which field am I interested in?</AccordionTrigger>
-              <AccordionContent className="sm:text-[1.5vw]">
+              <AccordionContent className="sm:text-[1.5vw] leading-8">
                 I love working with the backend and I am learning about the Cloud and how computer networking works.
               </AccordionContent>
             </AccordionItem>
             <AccordionItem value="item-3" className="border-black">
               <AccordionTrigger>What am I learning right now?</AccordionTrigger>
-              <AccordionContent className="sm:text-[1.5vw]">
+              <AccordionContent className="sm:text-[1.5vw] leading-8">
                 Currently I'm leaning Go and building web servers with it.
               </AccordionContent>
             </AccordionItem>
