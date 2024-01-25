@@ -2,11 +2,9 @@
 
 My Portfolio Website showcasing my projects and experience.
 
-
 ## Screenshots
 
 ![Screenshot 2024-01-24 at 22-33-09 Abhishek R Nayak](https://github.com/ronnie-nayak/portfolio/assets/60402476/420994f9-25e3-41f8-81ca-b467c09186f1)
-
 
 ## Features
 
@@ -14,7 +12,6 @@ My Portfolio Website showcasing my projects and experience.
 - Sleek UI/UX design
 - Responsive Design
 - Working Contact Form
-
 
 ## Tech Stack
 
@@ -26,13 +23,12 @@ My Portfolio Website showcasing my projects and experience.
 
 **Link:** https://abhishek-ron-nayak.vercel.app/
 
-
 ## Run Locally
 
 Clone the project
 
 ```bash
-  git clone https://github.com/ronnie-nayak/portfolio
+  git clone https://github.com/ronnie-nayak/portfolio.git
 ```
 
 Go to the project directory
@@ -59,23 +55,18 @@ Run Build Files
   npm run start
 ```
 
-
 ## Authors
 
 - [@ronnie-nayak](https://github.com/ronnie-nayak)
 
-
 ## Acknowledgements
 
- - [Design Reference](https://www.figma.com/community/file/1059588617705355339)
-
+- [Design Reference](https://www.figma.com/community/file/1059588617705355339)
 
 ## Feedback
 
 If you have any feedback, please reach out to us at abhishek.ron.nayak@gmail.com
 
-
 ## License
 
 [MIT](https://choosealicense.com/licenses/mit/)
-

@@ -223,8 +223,8 @@ export default function Projects() {
           animate={{ opacity: 1, filter: "blur(1px)" }}
           transition={{ duration: 0.9 }}
 
-        // onAnimationStart={() => setPageScroll(false)}
-        // onAnimationComplete={() => setPageScroll(true)}
+          // onAnimationStart={() => setPageScroll(false)}
+          // onAnimationComplete={() => setPageScroll(true)}
         ></motion.div>
       )}
     </div>
