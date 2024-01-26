@@ -33,7 +33,7 @@ export default function Home() {
   return (
     <div data-scroll-container>
       <div
-        className={`pt-20 xl:w-[1300px] sm:w-3/4 mx-auto ${pageScroll ? "" : "h-screen overflow-hidden"} `}
+        className={`pt-20 xl:w-[1300px] mx-auto ${pageScroll ? "" : "h-screen overflow-hidden"} `}
       >
         <Hero />
         <Projects />

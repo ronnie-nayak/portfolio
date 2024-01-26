@@ -58,7 +58,7 @@ export default function AboutMe() {
 
         <div className="w-full sm:text-[1.5vw] flex flex-col items-center">
           <div
-            className="w-60 h-60 sm:w-96 sm:h-96 rounded-full border-8 border-double border-gray-500"
+            className="w-60 h-60 lg:w-96 lg:h-96 rounded-full border-8 border-double border-gray-500"
             style={{
               background: "url('/profile.jpg') center no-repeat",
               backgroundSize: "contain",
