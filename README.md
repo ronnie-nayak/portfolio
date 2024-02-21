@@ -23,45 +23,10 @@ My Portfolio Website showcasing my projects and experience.
 
 **Link:** https://abhishek-ron-nayak.vercel.app/
 
-## Run Locally
-
-Clone the project
-
-```bash
-  git clone https://github.com/ronnie-nayak/portfolio.git
-```
-
-Go to the project directory
-
-```bash
-  cd portfolio
-```
-
-Install dependencies
-
-```bash
-  npm install
-```
-
-Build the Project
-
-```bash
-  npm run build
-```
-
-Run Build Files
-
-```bash
-  npm run start
-```
 
 ## Authors
 
 - [@ronnie-nayak](https://github.com/ronnie-nayak)
-
-## Acknowledgements
-
-- [Design Reference](https://www.figma.com/community/file/1059588617705355339)
 
 ## Feedback
 
