@@ -38,11 +38,11 @@ const projectLinks = [
   {
     name: "Eat Street",
     layoutId: "0",
-    bigImage: "url('/project/big-eat.png') 50% -5%",
+    bigImage: "url('/project/big-eat.webp') 50% -5%",
     imageSize: "200%",
     setterFunction: "first",
-    smallImage: "/project/small-eat.png",
-    middleImage: "url('/project/eat-street.png') center ",
+    smallImage: "/project/small-eat.webp",
+    middleImage: "url('/project/eat-street.webp') center ",
     link: "/eat-street#eat-street",
     website: "https://eat-street-web.vercel.app/",
     github: "https://github.com/ronnie-nayak/eat-street",
@@ -50,11 +50,11 @@ const projectLinks = [
   {
     name: "Save-Up",
     layoutId: "1",
-    bigImage: "url('/project/big-save.png') 30% 150%",
+    bigImage: "url('/project/big-save.webp') 30% 150%",
     imageSize: "250%",
     setterFunction: "second",
-    smallImage: "/project/small-save.png",
-    middleImage: "url('/project/save-up.png') center",
+    smallImage: "/project/small-save.webp",
+    middleImage: "url('/project/save-up.webp') center",
     link: "/save-up#save-up",
     website: "https://save-up-web.vercel.app/",
     github: "https://github.com/ronnie-nayak/save-up",
@@ -62,11 +62,11 @@ const projectLinks = [
   {
     name: "Portfolio Website",
     layoutId: "2",
-    bigImage: "url('/project/big-arn.png') 50% 65%",
+    bigImage: "url('/project/big-arn.webp') 50% 65%",
     imageSize: "200%",
     setterFunction: "third",
-    smallImage: "/project/small-arn.png",
-    middleImage: "url('/project/arn.png') center",
+    smallImage: "/project/small-arn.webp",
+    middleImage: "url('/project/arn.webp') center",
     link: "/arn#arn",
     website: "https://abhishek-ron-nayak.vercel.app/",
     github: "https://github.com/ronnie-nayak/portfolio",
@@ -99,9 +99,9 @@ function TransitionComponent({
 }
 
 const data = [
-  "project/eat-street.png",
-  "project/save-up.png",
-  "project/arm.png",
+  "project/eat-street.webp",
+  "project/save-up.webp",
+  "project/arm.webp",
 ];
 export default function Projects() {
   const scrollRef = useRef(null);
@@ -223,8 +223,8 @@ export default function Projects() {
           animate={{ opacity: 1, filter: "blur(1px)" }}
           transition={{ duration: 0.9 }}
 
-          // onAnimationStart={() => setPageScroll(false)}
-          // onAnimationComplete={() => setPageScroll(true)}
+        // onAnimationStart={() => setPageScroll(false)}
+        // onAnimationComplete={() => setPageScroll(true)}
         ></motion.div>
       )}
     </div>

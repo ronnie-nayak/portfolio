@@ -2,18 +2,18 @@ import Marquee from "react-fast-marquee";
 import Image from "next/image";
 
 const links = [
-  "/logos/node.svg",
-  "/logos/next.svg",
-  "/logos/auth.png",
-  "/logos/drizzle.jpg",
-  "/logos/recoil.svg",
-  "/logos/tailwind.svg",
-  "/logos/trpc.svg",
-  "/logos/turbo.svg",
-  "/logos/typescript.svg",
-  "/logos/react.png",
-  "/logos/mongo.svg",
-  "/logos/framer-motion.svg",
+  "/logos/node.webp",
+  "/logos/next.webp",
+  "/logos/auth.webp",
+  "/logos/drizzle.webp",
+  "/logos/recoil.webp",
+  "/logos/tailwind.webp",
+  "/logos/trpc.webp",
+  "/logos/turbo.webp",
+  "/logos/typescript.webp",
+  "/logos/react.webp",
+  "/logos/mongo.webp",
+  "/logos/framer-motion.webp",
 ];
 
 export function MarqueeComp() {

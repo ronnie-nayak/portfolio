@@ -60,7 +60,7 @@ export default function AboutMe() {
           <div
             className="w-60 h-60 lg:w-96 lg:h-96 rounded-full border-8 border-double border-gray-500"
             style={{
-              background: "url('/profile.jpg') center no-repeat",
+              background: "url('/profile.webp') center no-repeat",
               backgroundSize: "contain",
             }}
           ></div>
@@ -79,7 +79,7 @@ export default function AboutMe() {
               <Image
                 className="hover:scale-110 transition duration-200"
                 alt="github"
-                src="/github.svg"
+                src="/github.webp"
                 width={90}
                 height={90}
               />
@@ -91,7 +91,7 @@ export default function AboutMe() {
               <Image
                 className="hover:scale-110 transition duration-200"
                 alt="linkedin"
-                src="/linkedin.svg"
+                src="/linkedin.webp"
                 width={110}
                 height={110}
               />
@@ -103,7 +103,7 @@ export default function AboutMe() {
               <Image
                 className="hover:scale-110 transition duration-200"
                 alt="whatsapp"
-                src="/whatsapp.svg"
+                src="/whatsapp.webp"
                 width={110}
                 height={110}
               />

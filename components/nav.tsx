@@ -43,7 +43,7 @@ export default function Nav() {
           <Link href="/">
             <img
               className="h-40"
-              src="/arn.png"
+              src="/arn.webp"
               alt="logo"
               style={{
                 clipPath: "inset(30% 10% 30% 10% round 15%)",

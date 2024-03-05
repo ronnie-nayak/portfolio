@@ -41,7 +41,7 @@ export default function Hero() {
       </div>
       <motion.div
         style={{
-          background: "url('/photo2.jpg') center no-repeat",
+          background: "url('/photo2.webp') center no-repeat",
           backgroundSize: "cover",
         }}
         className="float-right z-0 w-6/12 h-full overflow-y-clip"
