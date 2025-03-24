@@ -1,6 +1,5 @@
 import { handleScroll } from "@/lib/utils";
 import { motion } from "framer-motion";
-import { useSearchParams } from "next/navigation";
 import { type } from "os";
 import { TypeAnimation } from "react-type-animation";
 // I’m Abhishek (Ronnie) Nayak, a fullstack developer & system designer based in New Delhi.<br /> Available for freelance & collaborations.

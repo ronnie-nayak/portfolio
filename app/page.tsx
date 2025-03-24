@@ -10,7 +10,6 @@ import Skill from "@/components/skill";
 import { handleScroll } from "@/lib/utils";
 import { PageScrollState } from "@/recoil/atoms";
 import LocomotiveScroll from "locomotive-scroll";
-import { useSearchParams } from "next/navigation";
 import { useEffect } from "react";
 import { useRecoilState, useRecoilValue } from "recoil";
 
